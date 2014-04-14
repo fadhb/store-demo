@@ -52,4 +52,9 @@ class ProductsControllerTest < ActionController::TestCase
 
     assert_redirected_to products_path
   end
+  
+  test "functional testing product display page" do
+    get :show, id:@product
+    assert_select 'p', minimum:4
+  end  
 end
