@@ -11,3 +11,9 @@ two:
   address: MyText
   email: MyString
   pay_type: MyString
+  
+mail:
+  name: jph
+  address: mytext
+  email: test@example.com
+  pay_type: Check
