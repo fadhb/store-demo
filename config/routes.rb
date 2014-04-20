@@ -1,10 +1,14 @@
 StoreDemo::Application.routes.draw do
+  resources :users
+
   resources :orders
 
   resources :line_items
 
   resources :carts
 
+  resources :users
+  
   get "store/index"
   resources :products do
     get :who_bought, on: :member
